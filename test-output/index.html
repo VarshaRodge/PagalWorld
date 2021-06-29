@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Automation_Testing" class="navigator-link">
+              <span class="suite-name border-failed">Automation Testing</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Automation_Testing" class="navigator-link ">
+                    <span>C:\Users\vrodg\eclipse-workspace\PagalWorld\src\test\java\com\qa\utility\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Automation_Testing" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Automation_Testing" class="navigator-link ">
+                    <span>4 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Automation_Testing" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Automation_Testing" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Automation_Testing" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Automation_Testing" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Automation_Testing" class="hide-methods failed suite-Automation_Testing"> (hide)</a> <!-- hide-methods failed suite-Automation_Testing -->
+                      <a href="#" panel-name="suite-Automation_Testing" class="show-methods failed suite-Automation_Testing"> (show)</a> <!-- show-methods failed suite-Automation_Testing -->
+                    </span>
+                    <div class="method-list-content failed suite-Automation_Testing">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Testing" title="com.qa.test.TC_SearchSong" class="method navigator-link" hash-for-method="SearchItem(Ae Watan)">SearchItem(Ae Watan)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Automation_Testing -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Automation_Testing" class="hide-methods passed suite-Automation_Testing"> (hide)</a> <!-- hide-methods passed suite-Automation_Testing -->
+                      <a href="#" panel-name="suite-Automation_Testing" class="show-methods passed suite-Automation_Testing"> (show)</a> <!-- show-methods passed suite-Automation_Testing -->
+                    </span>
+                    <div class="method-list-content passed suite-Automation_Testing">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Testing" title="com.qa.test.TC_getRingtones" class="method navigator-link" hash-for-method="GetAllRingTones">GetAllRingTones</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Testing" title="com.qa.test.TC_SearchSong" class="method navigator-link" hash-for-method="SearchItem(Soch na sake)">SearchItem(Soch na sake)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Testing" title="com.qa.test.TC_SearchSong" class="method navigator-link" hash-for-method="SearchItem(Good luck)">SearchItem(Good luck)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Testing" title="com.qa.test.TC_SearchSong" class="method navigator-link" hash-for-method="SearchItem(Phir Kabhi)">SearchItem(Phir Kabhi)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Testing" title="com.qa.test.TC_getPanjabiSongs" class="method navigator-link" hash-for-method="getAllPanjabiSongs">getAllPanjabiSongs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Testing" title="com.qa.test.TC_SearchSong" class="method navigator-link" hash-for-method="getAvailableSongs">getAvailableSongs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Testing" title="com.qa.test.TC_TakeScreenshots" class="method navigator-link" hash-for-method="screenshotOfDriver">screenshotOfDriver</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Testing" title="com.qa.test.TC_TakeScreenshots" class="method navigator-link" hash-for-method="screenshotOfElement">screenshotOfElement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Testing" title="com.qa.test.TC_TakeScreenshots" class="method navigator-link" hash-for-method="screenshotOfFullPage">screenshotOfFullPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Automation_Testing -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Automation_Testing" class="panel Automation_Testing">
+          <div class="suite-Automation_Testing-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.test.TC_SearchSong</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchItem(Ae Watan)">
+                  </a> <!-- SearchItem(Ae Watan) -->
+                  <span class="method-name">SearchItem</span>
+                  <span class="parameters">(Ae Watan)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.qa.test.TC_SearchSong.SearchItem(TC_SearchSong.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Testing-class-failed -->
+          <div class="suite-Automation_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.test.TC_TakeScreenshots</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="screenshotOfDriver">
+                  </a> <!-- screenshotOfDriver -->
+                  <span class="method-name">screenshotOfDriver</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="screenshotOfElement">
+                  </a> <!-- screenshotOfElement -->
+                  <span class="method-name">screenshotOfElement</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="screenshotOfFullPage">
+                  </a> <!-- screenshotOfFullPage -->
+                  <span class="method-name">screenshotOfFullPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Testing-class-passed -->
+          <div class="suite-Automation_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.test.TC_getRingtones</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAllRingTones">
+                  </a> <!-- GetAllRingTones -->
+                  <span class="method-name">GetAllRingTones</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Testing-class-passed -->
+          <div class="suite-Automation_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.test.TC_getPanjabiSongs</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllPanjabiSongs">
+                  </a> <!-- getAllPanjabiSongs -->
+                  <span class="method-name">getAllPanjabiSongs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Testing-class-passed -->
+          <div class="suite-Automation_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.test.TC_SearchSong</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchItem(Soch na sake)">
+                  </a> <!-- SearchItem(Soch na sake) -->
+                  <span class="method-name">SearchItem</span>
+                  <span class="parameters">(Soch na sake)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchItem(Good luck)">
+                  </a> <!-- SearchItem(Good luck) -->
+                  <span class="method-name">SearchItem</span>
+                  <span class="parameters">(Good luck)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchItem(Phir Kabhi)">
+                  </a> <!-- SearchItem(Phir Kabhi) -->
+                  <span class="method-name">SearchItem</span>
+                  <span class="parameters">(Phir Kabhi)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAvailableSongs">
+                  </a> <!-- getAvailableSongs -->
+                  <span class="method-name">getAvailableSongs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Testing-class-passed -->
+        </div> <!-- panel Automation_Testing -->
+        <div panel-name="test-xml-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\vrodg\eclipse-workspace\PagalWorld\src\test\java\com\qa\utility\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Automation Testing&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.utility.Reporting&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Functional Testing for Searching Songs On PagalWorld&quot;&gt;
+    &lt;parameter name=&quot;Url&quot; value=&quot;https://pagaliworld.com/&quot;/&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.test.TC_SearchSong&quot;/&gt;
+      &lt;class name=&quot;com.qa.test.TC_TakeScreenshots&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Functional Testing for Searching Songs On PagalWorld --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Functional Testing for Searching Ringtones On PagalWorld&quot;&gt;
+    &lt;parameter name=&quot;Url&quot; value=&quot;https://pagaliworld.com/&quot;/&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;Firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.test.TC_getRingtones&quot;/&gt;
+      &lt;class name=&quot;com.qa.test.TC_getPanjabiSongs&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Functional Testing for Searching Ringtones On PagalWorld --&gt;
+&lt;/suite&gt; &lt;!-- Automation Testing --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Automation Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Functional Testing for Searching Songs On PagalWorld (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Functional Testing for Searching Ringtones On PagalWorld (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Automation Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">HeaderLinkTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">GetAllRingTones</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllPanjabiSongs</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">HomePageTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAvailableSongs</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">ScreenShots</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">screenshotOfDriver</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">screenshotOfElement</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">screenshotOfFullPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">SearchbarTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">SearchItem</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Automation Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Automation_Testing');
+function tableData_Automation_Testing() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'screenshotOfFullPage')
+data.setCell(0, 2, 'com.qa.test.TC_TakeScreenshots')
+data.setCell(0, 3, 35052);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'getAllPanjabiSongs')
+data.setCell(1, 2, 'com.qa.test.TC_getPanjabiSongs')
+data.setCell(1, 3, 21491);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'GetAllRingTones')
+data.setCell(2, 2, 'com.qa.test.TC_getRingtones')
+data.setCell(2, 3, 19502);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'SearchItem')
+data.setCell(3, 2, 'com.qa.test.TC_SearchSong')
+data.setCell(3, 3, 13279);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'SearchItem')
+data.setCell(4, 2, 'com.qa.test.TC_SearchSong')
+data.setCell(4, 3, 8785);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'SearchItem')
+data.setCell(5, 2, 'com.qa.test.TC_SearchSong')
+data.setCell(5, 3, 7083);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'SearchItem')
+data.setCell(6, 2, 'com.qa.test.TC_SearchSong')
+data.setCell(6, 3, 7011);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'screenshotOfElement')
+data.setCell(7, 2, 'com.qa.test.TC_TakeScreenshots')
+data.setCell(7, 3, 3980);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'getAvailableSongs')
+data.setCell(8, 2, 'com.qa.test.TC_SearchSong')
+data.setCell(8, 3, 2905);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'screenshotOfDriver')
+data.setCell(9, 2, 'com.qa.test.TC_TakeScreenshots')
+data.setCell(9, 3, 1374);
+window.suiteTableData['Automation_Testing']= { tableData: data, tableDiv: 'times-div-Automation_Testing'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Automation_Testing">
+              </div> <!-- times-div-Automation_Testing -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Automation Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getAllPanjabiSongs</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Total no of Panjabi songs available are :20</span>
+                <span class="reporter-method-output">Ve Paagla Enna Pyar Nai Karde
+Akhil</span>
+                <span class="reporter-method-output">Paagla
+Akhil</span>
+                <span class="reporter-method-output">Pyar Acha Lagta Hai
+Navjeet</span>
+                <span class="reporter-method-output">Roka Ni
+Gurnam Bhullar</span>
+                <span class="reporter-method-output">Tere Naalon
+Ninja</span>
+                <span class="reporter-method-output">Jodhpur
+Jordan Sandhu</span>
+                <span class="reporter-method-output">Bahla Changa
+Inder Chahal</span>
+                <span class="reporter-method-output">Jeep
+Gur Sidhu</span>
+                <span class="reporter-method-output">Good Luck
+Garry Sandhu</span>
+                <span class="reporter-method-output">Ishq Lagan
+Yasser Desai</span>
+                <span class="reporter-method-output">Mere Wala Jatt
+Prem Dhillon</span>
+                <span class="reporter-method-output">Mohabbat
+Kaka</span>
+                <span class="reporter-method-output">Munde Mere Shehar De
+Harpinder Gill, Navaan Sandhu</span>
+                <span class="reporter-method-output">Tere Viah Di Khabar
+Kaka</span>
+                <span class="reporter-method-output">Karda Mai Yaad
+Jazzleen Kaur</span>
+                <span class="reporter-method-output">Nazraan
+Kaka</span>
+                <span class="reporter-method-output">Agg Pyar Di
+Kaka</span>
+                <span class="reporter-method-output">Tenu Yaad Karaan
+Gurnazar, Asees Kaur</span>
+                <span class="reporter-method-output">Sucha Soorma
+Ranjit Bawa</span>
+                <span class="reporter-method-output">Achha Ve Achha
+Nikk</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">GetAllRingTones</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Total no of Ringtones available are :3</span>
+                <span class="reporter-method-output">Pubg Ringtones
+All Pubg Ringtones</span>
+                <span class="reporter-method-output">A to Z Ringtones
+A to Z Ringtones Collection</span>
+                <span class="reporter-method-output">Tik Tok Ringtones
+Latest TikTok Ringtones Collection</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getAvailableSongs</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">New Available Songs : </span>
+                <span class="reporter-method-output">Total no of songs available are : 14</span>
+                <span class="reporter-method-output">Ishare Tere Karti Nigah
+Sumit Goswami</span>
+                <span class="reporter-method-output">Roi Na Je Yaad Meri Aayi Ve
+Ninja</span>
+                <span class="reporter-method-output">Chidiya
+Vilen</span>
+                <span class="reporter-method-output">Dil Chahte Ho
+Jubin Nautiyal</span>
+                <span class="reporter-method-output">Khairiyat Pucho
+Arijit Singh</span>
+                <span class="reporter-method-output">Teri Cute Jahi Smile Utte Kina Mardi
+Aroob Khan</span>
+                <span class="reporter-method-output">Born To Shine
+Diljit Dosanjh</span>
+                <span class="reporter-method-output">Feelings
+Vatsala</span>
+                <span class="reporter-method-output">Duniya (Satyajeet Jeena Remix)
+DJ Dalal London</span>
+                <span class="reporter-method-output">Maine Pyar Tume Se Kiya Hai (Remix) DJ Dalal London
+DJ Dalal London</span>
+                <span class="reporter-method-output">Tera Mera Pyaar (Ft Raxstar)
+Nish Tera Mera Pyaar (2020)</span>
+                <span class="reporter-method-output">Nightmares
+Serhat Durmus ME and U (2020)</span>
+                <span class="reporter-method-output">Love Me Someday
+Maninder Buttar</span>
+                <span class="reporter-method-output">Tootey Khaab (Female Version)
+Shreya Karmaka</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SearchItem(Soch na sake)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Total no of songs loaded are:1</span>
+                <span class="reporter-method-output">Soch Na Sake
+Cover Mp3 Songs
+Amrita Nayak</span>
+                <span class="reporter-method-output">Soch na sake - Your Search Result - PagalWorld:----> this song is available</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SearchItem(Good luck)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Total no of songs loaded are:1</span>
+                <span class="reporter-method-output">Good Luck
+Punjabi Mp3 Songs
+Garry Sandhu</span>
+                <span class="reporter-method-output">Good luck - Your Search Result - PagalWorld:----> this song is available</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SearchItem(Phir Kabhi)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Total no of songs loaded are:2</span>
+                <span class="reporter-method-output">Phir Mulakat Hogi Kabhi
+Punjabi Mp3 Songs
+Rii</span>
+                <span class="reporter-method-output">Phir Na Milen Kabhi Reprise
+Indian Pop Mp3 Songs
+Tulsi Kumar</span>
+                <span class="reporter-method-output">Phir Kabhi - Your Search Result - PagalWorld:----> this song is available</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SearchItem(Ae Watan)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Ae Watan - Your Search Result - PagalWorld:----> this song is not available</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.test.TC_getRingtones</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">SetUp(Firefox, https://pagaliworld.com/)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.test.TC_getPanjabiSongs</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">SetUp(Firefox, https://pagaliworld.com/)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.test.TC_SearchSong</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">SetUp(Chrome, https://pagaliworld.com/)</span>
+                <span class="method-start">303 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.test.TC_TakeScreenshots</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">SetUp(Chrome, https://pagaliworld.com/)</span>
+                <span class="method-start">303 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.test.TC_SearchSong</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getAvailableSongs</span>
+                <span class="method-start">35092 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.test.TC_TakeScreenshots</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">screenshotOfElement</span>
+                <span class="method-start">41558 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">screenshotOfDriver</span>
+                <span class="method-start">45542 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">screenshotOfFullPage</span>
+                <span class="method-start">46923 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.test.TC_getPanjabiSongs</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getAllPanjabiSongs</span>
+                <span class="method-start">62255 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.test.TC_getRingtones</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">GetAllRingTones</span>
+                <span class="method-start">63001 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.test.TC_TakeScreenshots</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">81982 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.test.TC_SearchSong</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SearchItem(Phir Kabhi)</span>
+                <span class="method-start">82308 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.test.TC_getRingtones</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">82506 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.test.TC_getPanjabiSongs</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">83748 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.test.TC_SearchSong</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SearchItem(Ae Watan)</span>
+                <span class="method-start">95590 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SearchItem(Soch na sake)</span>
+                <span class="method-start">104408 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SearchItem(Good luck)</span>
+                <span class="method-start">111424 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">118510 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Testing" parallel = "tests">
+<listeners>
+<listener class-name="com.qa.utility.Reporting"></listener>
+</listeners>
+ <test thread-count="5" name="Functional Testing for Searching Songs On PagalWorld" parallel="classes">
+  <parameter name="Browser" value="Chrome"/>
+  <parameter name="Url" value="https://pagaliworld.com/"/>
+    <classes>
+             <class name="com.qa.test.TC_SearchSong"/>
+             <class name="com.qa.test.TC_TakeScreenshots"/>	
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Functional Testing for Searching Ringtones On PagalWorld" parallel="classes">
+  <parameter name="Browser" value="Firefox"/>
+  <parameter name="Url" value="https://pagaliworld.com/"/>
+    <classes>
+             <class name="com.qa.test.TC_getRingtones"/>
+             <class name="com.qa.test.TC_getPanjabiSongs"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+    

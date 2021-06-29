@@ -1,0 +1,8 @@
+com\qa\test\TestBase.class
+com\qa\test\TC_TakeScreenshots.class
+com\qa\pages\PagalWorldPages.class
+com\qa\test\TC_getPanjabiSongs.class
+com\qa\test\TC_getRingtones.class
+com\qa\utility\ExcelUtility.class
+com\qa\utility\Reporting.class
+com\qa\test\TC_SearchSong.class

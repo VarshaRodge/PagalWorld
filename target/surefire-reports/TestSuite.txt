@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 75.012 s <<< FAILURE! - in TestSuite
+SearchItem(com.qa.test.TC_SearchSong)  Time elapsed: 2.315 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.qa.test.TC_SearchSong.SearchItem(TC_SearchSong.java:46)
+
